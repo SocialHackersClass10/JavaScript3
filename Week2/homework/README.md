@@ -4,7 +4,7 @@ About this Project (web page) :
 ====================================
 Extra effort was included to fortify the page from breaking due to bad / unexpected data.
 
-For this reason extra functionality was included and there exists an option (actually it is the initial page mode) to run the page in emulation mode, wherein the data is not requested through an API call, but is instead supplied by an internal function, that produces data with diverse errors, emissions and unexpected / invalid values.
+For this reason extra functionality was included and there exists an option (actually it is the initial page mode) to run the page in emulation mode, wherein the data is not requested through an API call, but is instead supplied by an internal function, that produces data with diverse errors, nonexistent and unexpected or invalid values.
 
 To that end, a special "options" section has been added to the top of the page, whence from the page behavior can be influenced.
 
@@ -38,6 +38,8 @@ About the "emulated" data :
 ====================================
 The emulated "repositories" result consists of a special data collection with a multitude of nonexistent, erroneous, null, undefined, empty or missing values, test values, missing names, same names with upper/lower case differences, etc...
 It is supposed to test all possible problems a page may encounter, and has to fortify against in order not to break.
+.
+
 
 The subsequent "contributors" results are semi-random, meaning that names are completely random but images and links are real but inserted into random objects, and also the resulting list length is randomized.
 
