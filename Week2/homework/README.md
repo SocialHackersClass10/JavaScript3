@@ -26,7 +26,7 @@ except when the page gets refreshed, where there are 2 consecutive fetches, both
 
 Error production (option #2) is done by:
 1.  in case of emulated data a sample error is thrown
-and 2.  in case of real API call, the URL is slightly altered to produce an error response
+2.  in case of real API call, the URL is slightly altered to produce an error response
 
 Empty datasets (option #3) are always emulated, regardles of option #1
 
@@ -46,7 +46,7 @@ About the "live" API data :
 Some subsequent (contributor list) fetches fail because of bad links.
 Located repos with links that fail are:
 1.  english-booster
-and 2.  hyfer-infra
+2.  hyfer-infra
 
 Those 2 hold broken values in their "contributors_url"
 Evoking the address on that url, even in the browser, yields an empty page.
