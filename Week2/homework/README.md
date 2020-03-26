@@ -1,6 +1,6 @@
 
 
-About this web page :
+About this Project (web page) :
 ====================================
 Extra effort was included to fortify the page from breaking due to bad / unexpected data.
 
