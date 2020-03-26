@@ -1,0 +1,138 @@
+
+
+:root {
+    --normal_back_color: wheat;
+    --normal_text_color: black;
+    --attention_back_color: lightblue;
+    --alternate_back_color: #0a1a3e;      //  dark blue-black
+    --alternate_text_color: #efefef;
+    --interactive_back_color: silver;
+    --interactive_text_color: black;
+    --hover_back_color: orange;
+    --hover_text_color: black;
+    --focus_back_color: yellow;
+    --focus_text_color: black;
+    --alert_back_color: red;
+    --alert_text_color: gold;
+}
+
+
+* {
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+    cursor: default;
+    box-sizing: border-box;
+}
+
+
+:focus {
+    background-color: var(--focus_back_color);
+    outline: none;
+}
+
+
+body {
+    background-color: var(--normal_back_color);
+    color: var(--alternate_back_color);
+    margin-top: 5px;
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+}
+body:before {
+    background: url("./hyf.png");
+    background-size: cover;
+    content: " ";
+    position: fixed;
+    z-index: -1;
+    width: 42vmin;
+    height: 42vmin;
+    top: 1rem;
+    right: 1rem;
+    opacity: 0.24;
+}
+
+
+div {
+    padding: 16px 20px;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+
+td {
+    padding: 0px 12px 3px 0px;
+    vertical-align: top;
+}
+
+
+a {
+    background-color: var(--interactive_back_color);
+    padding: 0 12px;
+}
+a:hover {
+    background-color: var(--hover_back_color);
+    text-decoration: none;
+}
+
+
+.cls_colored_header {
+    background: linear-gradient(to right, var(--attention_back_color) , rgba(128,128,128,0) );
+    font-weight: bold;
+    font-size: 1.7rem;
+    font-style: italic;
+}
+
+
+.cls_alt_color {
+    background: linear-gradient(to right, var(--attention_back_color) , rgba(128,128,128,0) );
+}
+
+
+.cls_hover_highlight {
+    background: linear-gradient(to right, var(--interactive_back_color) , rgba(128,128,128,0) );
+    margin-top: 8px;
+    font-weight: bold;
+    z-index: 1;
+    position: relative;
+}
+.cls_hover_highlight::before {
+    background: linear-gradient(to right, var(--hover_back_color) , rgba(128,128,128,0.05) );
+    content: "";
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: opacity 203ms linear;
+}
+.cls_hover_highlight:hover::before {
+    opacity: 1;
+}
+
+
+.alert-error {
+    background: linear-gradient(to right, var(--alert_back_color) , rgba(128,128,128,0) );
+    color: var(--alert_text_color);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.cls_unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+;
+
