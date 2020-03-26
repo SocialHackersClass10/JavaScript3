@@ -63,4 +63,3 @@ In case of subsequent fetch errors (those for contributors) I have opted not to 
 In order to avoid web traffic, "contributors" fetching is done once for each repo, and that result is stored and used until page refresh.
 
 That means that, once a result has been received, whether it is an actual list, an empty dataset or an error which results in an empty dataset, that will be the result displayed each time the user selects that repo from the repo selection element.
-.
