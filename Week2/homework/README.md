@@ -38,7 +38,7 @@ About the "emulated" data :
 ====================================
 The emulated "repositories" result consists of a special data collection with a multitude of nonexistent, erroneous, null, undefined, empty or missing values, test values, missing names, same names with upper/lower case differences, etc...
 
-It is supposed to test all possible problems a page may encounter, and has to fortify against in order not to break.
+It is supposed to represent possible data problems a page may encounter, and has to fortify against in order to work correctly.
 
 The subsequent "contributors" results are semi-random, meaning that names are completely random but images and links are real, tho inserted into random objects, and also the resulting contributor list length is randomized.
 
