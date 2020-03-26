@@ -4,25 +4,30 @@ About the Project (the web page) :
 ====================================
 Extra effort was included to fortify the page from breaking due to bad / unexpected data.
 
-For this reason extra functionality was included and there exists an option to run the page in data emulation mode (which actually is the initial page mode), wherein the data is not requested through an API call, but is instead supplied by an internal function, that produces data with diverse errors, nonexistent, unexpected or invalid values.
+For this reason extra functionality was included and there exists an option to run the page in data emulation mode
+(which actually is the initial page mode),
+wherein the data is not requested through an API call, but is instead supplied by an internal function, that produces data with diverse errors, nonexistent, unexpected or invalid values.
 
 To that end, a special "options" section has been added to the top of the page, whence from the page behavior can be influenced.
 
 All the originally-required essential HTML elements are produced through javascript code.
+
 The only additions to the actual html file are those introduced for the new "options" section, and that only so they can retain their settings between page refreshes.
 
 
 About the "options" section :
 ====================================
 The "options" section can be toggled to visible / hidden by tapping the cog icon on the upper right corner.
-If hidden, it will stay so until revealed by taping the same icon (or when you refresh the web page and option #4 is checked)
+
+If hidden, it will stay so until revealed by taping the same icon (or when you refresh the web page and option #4 is checked).
+
 It can be kept permanently hidden after page refresh, by un-checking option #4.
 
 By default the options are set to emulate API calls, and will do so while option #1 is checked.
 
-Options #1 , #2 and #3 will influence the next fetch operation
-(meaning you could mix & match "emulated" and "live" data)
-except when the page gets refreshed, where there are 2 consecutive fetches, both of which are subjected to the specified options.
+Options #1 , #2 and #3 will influence the next fetch operation.
+(meaning you could mix & match "emulated" and "live" data).
+An Exception is when the page gets refreshed, where there are 2 consecutive fetches, both of which are subjected to the specified options.
 
 Error production (option #2) is done by:
 1.  in case of emulated data a sample error is thrown
@@ -40,7 +45,7 @@ The emulated "repositories" result consists of a special data collection with a 
 
 It is supposed to represent possible data problems a page may encounter, and has to fortify against in order to work correctly.
 
-The subsequent "contributors" results are semi-random, meaning that names are completely random but images and links are real, tho inserted into random objects, and also the resulting contributor list length is randomized.
+The subsequent "contributors" results are semi-random, meaning that names are completely random, but images and links are real, tho inserted into random objects, and also the resulting contributor list length is randomized.
 
 
 About the "live" API data :
@@ -50,8 +55,9 @@ Located repos with links that fail are:
 1.  english-booster
 2.  hyfer-infra
 
-Those 2 hold broken values in their "contributors_url"
-Evoking the address on that url, even in the browser, yields an empty page.
+Those 2 hold broken values in their "contributors_url".
+
+Evoking the addresses of those urls in the browser yields empty pages.
 
 Also the repo "DataStructures" has an empty contrib list result.
 
@@ -60,6 +66,6 @@ About the data in general :
 ====================================
 In case of subsequent fetch errors (those for contributors) I have opted not to display an error but instead to just log the error and the link in the console, and then let the page behave as if an empty result was received.
 
-In order to avoid web traffic, and possible github request refusal due to frequency, "contributors" fetching is done once for each repo, and that result is stored and used until page refresh.
+In order to avoid web traffic, and possible API request refusal due to frequency, "contributors" fetching is done once for each repo, and that result is stored and used until page refresh.
 
 That means that, once a result has been received, whether it is an actual list, an empty dataset or an error which results in an empty dataset, that will be the result displayed each time the user selects that repo from the repo selection element.
