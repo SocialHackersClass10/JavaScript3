@@ -4,7 +4,7 @@ About this Project (web page) :
 ====================================
 Extra effort was included to fortify the page from breaking due to bad / unexpected data.
 
-For this reason extra functionality was included and there exists an option (actually it is the initial page mode) to run the page in emulation mode, wherein the data is not requested through an API call, but is instead supplied by an internal function, that produces data with diverse errors, nonexistent and unexpected or invalid values.
+For this reason extra functionality was included and there exists an option (actually it is the initial page mode) to run the page in emulation mode, wherein the data is not requested through an API call, but is instead supplied by an internal function, that produces data with diverse errors, nonexistent, unexpected or invalid values.
 
 To that end, a special "options" section has been added to the top of the page, whence from the page behavior can be influenced.
 
