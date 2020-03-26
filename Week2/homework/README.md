@@ -28,6 +28,7 @@ Error production (option #2) is done by:
 1.  in case of emulated data a sample error is thrown
 2.  in case of real API call, the URL is slightly altered to produce an error response
 
+
 Empty datasets (option #3) are always emulated, regardles of option #1
 
 In case when options #3 and #4 are both checked, then option #3 has precedence, meaning an error result will be produced before an empty dataset.
@@ -36,6 +37,7 @@ In case when options #3 and #4 are both checked, then option #3 has precedence, 
 About the "emulated" data :
 ====================================
 The emulated "repositories" result consists of a special data collection with a multitude of nonexistent, erroneous, null, undefined, empty or missing values, test values, missing names, same names with upper/lower case differences, etc...
+
 It is supposed to test all possible problems a page may encounter, and has to fortify against in order not to break.
 
 The subsequent "contributors" results are semi-random, meaning that names are completely random but images and links are real, tho inserted into random objects, and also the resulting contributor list length is randomized.
