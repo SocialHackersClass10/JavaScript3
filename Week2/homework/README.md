@@ -69,3 +69,9 @@ In case of subsequent fetch errors (those for contributors) I have opted not to 
 In order to avoid web traffic, and possible API request refusal due to frequency, "contributors" fetching is done once for each repo, and that result is stored and used until page refresh.
 
 That means that, once a result has been received, whether it is an actual list, an empty dataset or an error which results in an empty dataset, that will be the result displayed each time the user selects that repo from the repo selection element.
+
+
+Bunus objective: undesired API request prevention
+====================================
+Additional effort was put into the prevention of consecutive API requests when the contents of the repo SELECT item are scrolled rapidly through by the user. To that end, once a repo-change has initiated an API request, all subsequent repo-change-handling is halted until that API request has concluded.
+
