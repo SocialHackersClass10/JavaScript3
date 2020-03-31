@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title id="id_page_title"></title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="./main.css" />
+    </head>
+    <body>
+        <div id="id_page_header" class="cls_page_header cls_text_align_right"></div>
+
+        <div id="id_page_info" class="cls_page_header"></div>
+
+        <div class="cls_api_container cls_unselectable">
+            <button onclick="apiCallThroughXHR()">Request new Data through XHR</button>
+            <button onclick="apiCallThroughAxios()">Request new Data through Axios</button>
+            <div class="cls_api_data_container">
+                <img id="id_api_data_image" />
+                <table id="id_api_data_table"></table>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="../common-files/api-axios.js"></script>
+        <script src="../common-files/api-xhr.js"></script>
+        <script src="./main.js"></script>
+    </body>
+</html>
+

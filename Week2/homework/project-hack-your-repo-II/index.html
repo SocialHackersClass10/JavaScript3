@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <meta name="theme-color" content="#000000">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="mobile-web-app-capable" content="yes">
+      <meta name="format-detection" content="telephone=no">
+      <link rel="apple-touch-icon" href="./hyf.png">
+      <link rel="shortcut icon" type="image/png" href="./hyf.png" />
+      <title>HYF-GITHUB</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+      <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+      <!--
+        - - - - - - - - - - - - Otions area elements - - - - - - - - - - - - -
+      -->
+      <img src="./options.png" id="id_options_image"/>
+      <div id='id_options_area'>
+        <p class="cls_options_element">
+          Due to GitHub’s strict rules on API request frequency,
+          you may experience a <em>"forbidden"</em> response.
+        </p>
+        <p class="cls_options_element">
+          In that case <em>( or for testing, or even for fun )</em>
+          you can use the following options to <em>"emulate"</em>
+          API data fetching with sample / random Data.
+        </p>
+        <p class="cls_options_element">
+          Note: set options <em>persist</em> even after page refresh,
+          thus enabling them to influence the initial <em>auto-fetch</em>
+          that creates the Repository List.
+        </p>
+        <table class="cls_options_element">
+          <tr>
+            <td>Return emulated data on next fetch ?</td>
+            <td><input id="id_opt_emulation" type="checkbox" checked="true" /></td>
+          </tr>
+          <tr>
+            <td>Force example error on next fetch ?</td>
+            <td><input id="id_opt_force_error" type="checkbox" /></td>
+          </tr>
+          <tr>
+            <td>Force empty result on next fetch ?</td>
+            <td><input id="id_opt_force_empty" type="checkbox" /></td>
+          </tr>
+          <tr>
+            <td>Keep Options visible on page refresh ?</td>
+            <td><input id="id_opt_keep_visible" type="checkbox" checked="true" /></td>
+          </tr>
+        </table>
+      </div>
+      <!--
+        - - - - - - - Normal page elements are dynamic JS-generated - - - - - - -
+      -->
+      <div id="root"></div>
+      <script src="./index.js"></script>
+    </body>
+
+</html>
+
