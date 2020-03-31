@@ -22,6 +22,7 @@ PART 2: Moving to the OOP version of the homework
 BONUS: A case study on caveats
 =====================
 Multiple consecutive data fetches & renders
+
 By design, if the user focuses on the repository selection field without opening the list (with TAB for example) or after a list item was selected, and then presses and holds UP/DOWN arrow buttons, the code will ussue a number of data fetches & renders, equal to the traversed repos, resulting in an equal number of quick consecutive data redraws.
 
 As a proof-of-caveat, this behavior can be clearly observed by opening the original unaltered page, found at
